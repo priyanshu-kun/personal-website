@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import { IconContext } from 'react-icons'
 import { FiArrowRight } from 'react-icons/fi';
 import { client } from '../../client'
-import recaptchaKey from '../../recaptchaKey';
 import ReCAPTCHA from 'react-google-recaptcha';
 import ButtonPreloader from './ButtonPreloader/ButtonPreloader';
 import animeGirl from "../../Assets/images/anime-girl-thank-you.gif"
@@ -102,7 +101,7 @@ export default function Form() {
                 </div>
                 <div className='mx-auto mt-10'>
                   <ReCAPTCHA
-                    sitekey={recaptchaKey.recaptchaKey || '6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI'}
+                    sitekey={process.env.RECAPTCHA || '6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI'}
                     onChange={handleRecaptcha}
                     theme='dark'
                     type='image'
