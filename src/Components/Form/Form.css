@@ -1,0 +1,34 @@
+.sidebar {
+    background-image: linear-gradient(-40deg, #5927E9, #bb1aca);
+}
+
+
+.sidebar span {
+    -webkit-text-stroke: 3px #fff;
+}
+
+.form input {
+    padding: 20px 30px;
+    background-color: transparent;
+    border: 3px solid rgb(255, 255, 255, 0.1);
+    box-sizing: border-box;
+    font-family: 'HelveticaNowDisplay-Medium';
+    outline: none;
+}
+
+
+
+.form textarea {
+    padding: 20px 30px;
+    background-color: transparent;
+    border: 3px solid rgb(255, 255, 255, 0.1);
+    box-sizing: border-box;
+    font-family: 'HelveticaNowDisplay-Medium';
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+
+.form input:focus, .form textarea:focus {
+    border-color: #FF6D42;
+}
